@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Blue Header</title>
+    <style>
+        /* Global Styles */
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        /* Header Styles */
+        .section-header {
+            background-color: #065392; /* Blue background color */
+            color: #fff; /* White text color */
+            padding: 10px;
+            border-radius: 30px 30px 30px 30px;
+        }
+
+        /* Header Icon Styles */
+        .header-icon {
+            font-size: 24px;
+            margin-right: 10px;
+            vertical-align: middle; /* Vertically align icon */
+        }
+
+        /* Content Container Styles */
+        .content-container {
+            border: 2px solid #065392; /* Blue border */
+            margin: 10px;
+            width: calc(50% - 24px); /* 50% width with margin and border included */
+            box-sizing:border-box;
+            float: left; /* Float the divs left to create a two-column layout */
+            display: flex; /* Use flexbox for vertical alignment */
+            flex-direction: column; /* Arrange children vertically */
+            justify-content: space-between; /* Space between header and buttons */
+            border-radius: 30px 30px 30px 30px;
+        }
+
+        /* Buttons Container Styles */
+        .buttons-container {
+            display: flex; /* Use flexbox for buttons and separator in one line */
+            justify-content: center; /* Center-align items horizontally */
+            padding: 10px; /* Add padding for spacing */
+            
+        }
+
+        /* Button Styles */
+        .button {
+            background-color: #065392; /* Blue background color */
+            color: #fff; /* White text color */
+            padding: 5px 10px; /* Add padding to buttons */
+            border: none;
+            cursor: pointer;
+        }
+
+ 
+
+        /* Clearfix to prevent layout issues */
+        .clearfix::after {
+            content: "";
+            clear: both;
+            display: table;
+        }
+
+        /* Header Text Styles */
+        .header-text {
+            text-align: left; /* Left-justify the header text */
+        }
+
+        /* Vertical Separator Styles */
+        .vertical-separator {
+            border-left: 2px solid #065392; /* Vertical line style */
+            height: 100px; /* Set the height of the vertical separator */
+            margin: 0 auto; /* Center the vertical separator */
+        }
+
+        /* OR Container Styles */
+        .or-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .form-1 h1 {
+    text-align: center;
+    margin-top: 0.7rem;
+    margin-bottom: 1.5rem;
+  }
+  
+  input[type="email"],
+  input[type="password"] {
+    border: none;
+    outline: none;
+    border-bottom: 1px solid;
+    background: none;
+    margin: 0.9rem 2rem;
+    font-size: 1rem;
+  }
+  
+  label {
+    margin: 0 2rem;
+  }
+  
+  span {
+    margin: 0 2rem;
+    color: blue;
+    cursor: pointer;
+  }
+  
+  button {
+    margin: 2rem;
+    margin-bottom: 1.5rem;
+    padding: 0.5rem;
+    cursor: pointer;
+    border-radius: 1rem;
+    border: none;
+    font-size: 1.1rem;
+    font-weight: bolder;
+    color: #fff;
+    background: linear-gradient(to right, #25aae1, #4481eb, #04befe, #3f86ed);
+  }
+   
+   .forms-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start; /* Align forms to the top */
+}
+
+.form-1,
+.form-2 {
+    flex: 1;
+    max-width: 45%;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.form-group {
+    text-align: center; /* Center the content within the form */
+}
+
+label {
+    display: block; /* Display labels on separate lines */
+    margin-top: 10px; /* Add space between labels and inputs */
+}
+
+
+p {
+    text-align: center; /* Center the "Forgot Password" text */
+}
+
+
+button {
+    width: 100%;
+    margin-bottom: 10px;
+    background-color: #0074d9; /* Set the background color to blue */
+    color: #fff; /* Set the text color to white */
+    border: none; /* Remove border */
+    padding: 10px 15px; /* Add padding for better appearance */
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+}
+
+
+.forms-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start; /* Align forms to the top */
+}
+
+.form-1,
+.form-2 {
+    flex: 1;
+    max-width: 45%;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+label {
+    display: block; /* Display labels on separate lines */
+    margin-top: 10px; /* Add space between labels and inputs */
+}
+
+.gridlabel0 {
+    display: block; /* Display labels on separate lines */
+    margin-top: 95px; /* Add space between labels and inputs */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size:small;
+    color: black;
+    cursor:default;
+}
+
+.gridlabel {
+    display: block; /* Display labels on separate lines */
+    margin-top: 76px; /* Add space between labels and inputs */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size:small;
+    color: black;
+    cursor:default;
+}
+
+.labelHHS {
+    display: block; /* Display labels on separate lines */
+    margin-top: 110px; /* Add space between labels and inputs */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size:small;
+}
+.labelHHS1 {
+    display: block; /* Display labels on separate lines */
+    margin-top: 48px; /*Add space between labels and inputs*/;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size:small;
+    color: black;
+    cursor:default;
+}
+.otplabel {
+    display: block; /* Display labels on separate lines */
+    margin-top: 77px; /* Add space between labels and inputs */
+    cursor:default;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: small;
+
+}
+.amsotp1 {
+    display: block; /* Display labels on separate lines */
+    margin-top: 66px; /*Add space between labels and inputs */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: small;
+    color: black;
+    cursor:default;
+}
+.firstlabel {
+    display: block; /* Display labels on separate lines */
+    margin-left: 20px; /* Add space between labels and inputs */
+    margin-top: 10px;
+    cursor:default;
+}
+
+.warninglabel {
+    display: block; /* Display labels on separate lines */
+    margin-top: 2px; /* Add space between labels and inputs */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: small;
+    color: black;
+    cursor:default;
+}
+.labeloptionmessage1{
+    display: block; /* Display labels on separate lines */
+    margin-top: 2px; /* Add space between labels and inputs */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size:small;
+    color: black;
+    cursor:default;
+}
+.lusername{
+    display: block; /* Display labels on separate lines */
+    margin-top: 2px; /* Add space between labels and inputs */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size:small;
+    color: black;
+    cursor:default;
+}
+
+
+
+input[type="email"],
+input[type="password"],
+button {
+    width: 30%; /* Make inputs and button full width */
+    margin-bottom: 10px; /* Add space between inputs and button */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size:small;
+}
+
+
+p {
+    text-align: center; /* Center the "Forgot Password" text */
+}
+
+/* Add media queries for responsiveness */
+@media (max-width: 768px) {
+    .forms-container {
+        flex-direction: column; /* Stack forms on top of each other on smaller screens */
+    }
+
+    .form-1,
+    .form-2 {
+        max-width: 100%; /* Make forms full width on smaller screens */
+    }
+}
+
+button:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+}
+.form-group {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .form-group button {
+        margin-top: 10px; /* Adjust the margin as needed */
+    }
+    </style>
+</head>
+<body>
+    <header class="section-header">
+        <span><img src="Images/SAMSLOGO.JPG" alt="Description of the image" width="300" height="40"></span> <!-- Replace with your desired icon -->
+    </header>
+    <span class="warninglabel"> <span style="color: red;">Warning:</span> This warning banner provides privacy and security notices consistent with applicable federal laws, directives, and other federal guidance for accessing this Government system, which includes all devices/storage media attached to this system. This system is provided for Government-authorized use only. Unauthorized or improper use of this system is prohibited and may result in disciplinary action and/or civil and criminal penalties. At any time, and for any lawful Government purpose, the government may monitor, record, and audit your system usage and/or intercept, search and seize any communication or data transiting or stored on this system. Therefore, you have no reasonable expectation of privacy. Any communication or data transiting or stored on this system may be disclosed or used for any lawful Government purpose.</span>
+    <div class="firstlabel"><b>Choose a login option</b></div>
+    <!-- First Section -->
+    <div class="content-container">
+       
+        <header class="section-header">
+            <span class="header-icon">📋</span> <!-- Replace with your desired icon -->
+            External Partners
+        </header>
+        <div class="forms-container">
+            <form class="form-1">
+                <div class="form-group">
+                    <p><b>SAMS Credentials</b> </p><span><img src="Images/SAMSCred.JPG" alt="Description of the image" width="160" height="80"></span>
+                    <label for="email" class="lusername">SAMS Username</label>
+                    <input type="email" name="email" id="email" required />
+                    <label for="password" class="lusername">SAMS Password</label>
+                    <input type="password" name="password" id="password" required />
+                    <button>Login</button>
+                    <p><span>Forgot Password</span></p>
+                    <span class="labeloptionmessage1">For External Partners who login with only a SAMS issued UserID and Password.</span>
+                </div>
+            </form>
+            <span><img src="Images/ORSeperator.JPG" alt="Description of the image" width="40" height="450"></span>
+            <form class="form-2">
+                <div class="form-group">
+                    <p><b>SAMS Grid Card</b> </p><span><img src="Images/SAMSGrid.JPG" alt="Description of the image" width="160" height="100"></span>
+                    <span class="gridlabel0">Click the Login button to sign on with a SAMS Grid Card</span>
+                    <button>Login</button>
+                    <p class="gridlabel">For External Partners who have been issued a SAMS Grid Card.</p>
+                </div>
+            
+            </form>
+        </div>
+    </div>
+
+    <!-- Second Section -->
+    <div class="content-container">
+        <header class="section-header">
+            <span class="header-icon">🔒</span> <!-- Replace with your desired icon -->
+            HHS Staff
+        </header>
+        <div class="forms-container">
+            <form class="form-1">
+                <div class="form-group">
+                    <p><b>AMS Login</b></p> <span><img src="Images/IAMHHS.JPG" alt="Description of the image" width="200" height="100"></span>
+                    <span class="labelHHS">How to use AMS</span>
+                    <button>Login</button>
+                    <p class="labelHHS1">For all HHS staff including Operating Divisions(CDC, NIH, FDA etc)</p>
+                </div>
+            </form>
+            <span><img src="Images/ORSeperator.JPG" alt="Description of the image" width="40" height="450"></span>
+            <form class="form-2">
+                <div class="form-group">
+                    <p><b>AMS One Time Password</b> </p><span><img src="Images/AMSOTP.JPG" alt="Description of the image" width="80" height="130"></span>
+                    <span class="otplabel">How to use OTP</span>
+                    <button>Login</button>
+                    <p class="amsotp1">For all HHS staff including Operating Divisions(CDC, NIH, FDA etc) with a One Time Password.</p>
+                </div>
+            
+            </form>
+        </div>
+    </div>
+        
+    </div>
+    
+    <!-- Clearfix to prevent layout issues -->
+    <div class="clearfix"></div>
+    
+    <!-- Rest of your content goes here -->
+
+</body>
+</html>

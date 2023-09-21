@@ -1,0 +1,40 @@
+<style>
+    .form-group {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .form-group button {
+        margin-top: 10px; /* Adjust the margin as needed */
+    }
+</style>
+
+<div class="content-container">
+    <header class="section-header">
+        <span class="header-icon">📋</span> <!-- Replace with your desired icon -->
+        External Partners
+    </header>
+    <div class="forms-container">
+        <form class="form-1">
+            <div class="form-group">
+                <p>SAMS Credentials </p><span class="header-icon">📋</span>
+                <label for="email">SAMS Username</label>
+                <input type="email" name="email" id="email" required />
+                <label for="password">SAMS Password</label>
+                <input type="password" name="password" id="password" required />
+                <button>Login</button>
+                <p><span>Forgot Password</span></p>
+                <p>For External Partners who login with only a SAMS issued UserID and Password.</p>
+            </div>
+        </form>
+        <form class="form-2">
+            <div class="form-group">
+                <p>SAMS Grid Card </p><span class="header-icon">📋</span>
+                <label for="email">Click the Login button to sign on with a SAMS Grid Card </label>
+                <button>Login</button>
+                <p>For External Partners who have been issued a SAMS Grid Card.</p>
+            </div>
+        </form>
+    </div>
+</div>

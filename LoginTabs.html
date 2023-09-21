@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Login Form</title>
+  <script
+    src="https://kit.fontawesome.com/66aa7c98b3.js"
+    crossorigin="anonymous"
+  ></script>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<div class="headertext"><h2>Select Login Method</h2></div>
+<div class="tabs">
+  <button class="tab" onclick="openTab(event, 'tab1')">HSPD-12 Access Card</button>
+  <button class="tab" onclick="openTab(event, 'tab2')">FIDO Security Key</button>
+   <button class="tab" onclick="openTab(event, 'tab3')">Network Credentials</button>
+   <button class="tab" onclick="openTab(event, 'tab4')">AMS Credentials</button>
+</div>
+
+<div id="tab1" class="tab-content">
+    <!DOCTYPE html>
+    <html lang="en">
+      <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Login Form</title>
+        <script
+          src="https://kit.fontawesome.com/66aa7c98b3.js"
+          crossorigin="anonymous"
+        ></script>
+        <link rel="stylesheet" href="styles.css" />
+      </head>
+      <body>
+        <div class="container">
+          <form class="form-1">
+            <span > <img src="Images/HSPD-12.JPG" alt="Description of the image" width="200" height="350"></br>
+                Insert your HSPD-12 access card into the smart card reader before you select login.
+                
+            </span>
+            
+            <button>Login</button>          
+          </form>
+        </div>
+      </body>
+    </html>
+   
+</div>
+
+<div id="tab2" class="tab-content">
+    <html lang="en">
+      <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Login Form</title>
+        <script
+          src="https://kit.fontawesome.com/66aa7c98b3.js"
+          crossorigin="anonymous"
+        ></script>
+        <link rel="stylesheet" href="styles.css" />
+      </head>
+      <body>
+        <div class="container2">
+          <form class="form-2">
+            <img src="Images/FIDO.JPG" alt="Description of the image" width="200" height="350">
+            <span>Please enter your FIDO credentials after you select login.</span>
+            <button>Login</button>
+           
+          </form>
+        </div>
+      </body>
+    </html>
+</div>
+<div id="tab3" class="tab-content">
+    <html lang="en">
+        <head>
+          <meta charset="UTF-8" />
+          <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+          <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+          <title>Login Form</title>
+          <script
+            src="https://kit.fontawesome.com/66aa7c98b3.js"
+            crossorigin="anonymous"
+          ></script>
+          <link rel="stylesheet" href="styles.css" />
+        </head>
+        <body>
+          <div class="container3">
+            <form class="form-3">
+                <label for="email"></label>
+                <label for="password"></label>
+                <span>Selecting the NIH Login method will redirect you to the NIH Smart Card Login page. You'll be automatically returned to AMS after you authenticate successfully. Network Credentials Help Page</span>
+             
+              <button>NIH Login</button>
+             
+            </form>
+          </div>
+        </body>
+      </html>
+</div>
+<div id="tab4" class="tab-content">
+    <html lang="en">
+        <head>
+          <meta charset="UTF-8" />
+          <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+          <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+          <title>Login Form</title>
+          <script
+            src="https://kit.fontawesome.com/66aa7c98b3.js"
+            crossorigin="anonymous"
+          ></script>
+          <link rel="stylesheet" href="styles.css" />
+        </head>
+        <body>
+          <div class="container4">
+            <form class="form-4">
+              <label for="email">AMS Username *<span class="forgott">Forgot?</span></label>
+              <input type="email" name="email" id="email" required />
+              <label for="password">AMS Password * <span class="forgott">Forgot?</span></label>
+              <input type="password" name="password" id="password" required />
+              <span>If neither of the other two login methods are applicable to you, you can access AMS by entering your AMS username and password. AMS Credentials Help Page Required fields are marked with an asterisk (*).</span>
+            </br><span class="forgottBig">First-time AMS user?</span></br>
+              <button>Login</button>
+             
+            </form>
+          </div>
+        </body>
+      </html>
+</div>
+</html>
+<style>
+.tabs {
+  display: flex;
+}
+.headtext {
+  display: flex;
+}
+
+.tab {
+  background-color: #ccc;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 10px 20px; /* Adjust the padding if needed */
+}
+
+.tab:hover {
+  background-color: #aaa;
+}
+
+.tab-content {
+  display: none;
+  background-color: #87a182;
+}
+
+/* Set the background colors for each tab */
+#tab1 {
+  /*background-color: #87a182;*/
+  background-color: #ffffff
+}
+
+#tab2 {
+  /*background-color: #a9eaeb;*/
+  background-color: #ffffff
+}
+#tab3 {
+  /*background-color: #a4b7d3;*/
+  background-color: #ffffff
+}
+#tab4 {
+  /*background-color: #b8c7c2;*/
+  background-color: #ffffff
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  height: 80vh;
+  margin: 0 auto;
+  position: relative;
+
+ /* background: linear-gradient(to right, #25aae1, #4481eb, #04befe, #3f86ed);*/
+}
+.container2 {
+  height: 80vh;
+  margin: 0 auto;
+  position: relative;
+ /* background: linear-gradient(to right, #25aae1, #4481eb, #04befe, #3f86ed);*/
+}
+.container3 {
+  height: 80vh;
+  margin: 0 auto;
+  position: relative;
+ /* background: linear-gradient(to right, #25aae1, #4481eb, #04befe, #3f86ed);*/
+}
+.container4 {
+  height: 80vh;
+  margin: 0 auto;
+  position: relative;
+ /* background: linear-gradient(to right, #25aae1, #4481eb, #04befe, #3f86ed);*/
+}
+
+
+.container .form-1 {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: #fff;
+  width: 40%;
+  box-shadow: 0 19px 38px rgba(0, 0, 0, 0.3);
+}
+
+.container2 .form-2 {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: #fff;
+  width: 40%;
+  box-shadow: 0 19px 38px rgba(0, 0, 0, 0.3);
+}
+
+.container3 .form-3 {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: #fff;
+  width: 40%;
+  box-shadow: 0 19px 38px rgba(0, 0, 0, 0.3);
+}
+
+.container4 .form-4 {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: #fff;
+  width: 40%;
+  box-shadow: 0 19px 38px rgba(0, 0, 0, 0.3);
+}
+
+.form-1 h1 {
+  text-align: center;
+  margin-top: 0.7rem;
+  margin-bottom: 1.5rem;
+}
+
+.form-2 h1 {
+  text-align: center;
+  margin-top: 0.7rem;
+  margin-bottom: 1.5rem;
+}
+.form-3 h1 {
+  text-align: center;
+  margin-top: 0.7rem;
+  margin-bottom: 1.5rem;
+}
+.form-4 h1 {
+  text-align: center;
+  margin-top: 0.7rem;
+  margin-bottom: 1.5rem;
+}
+
+input[type="email"],
+input[type="password"] {
+  border: none;
+  outline: none;
+  border-bottom: 1px solid;
+  background: none;
+  margin: 0.9rem 2rem;
+  font-size: 1rem;
+}
+
+label {
+  margin: 0 2rem;
+}
+
+span {
+  margin: 0 2rem;
+  color: black;
+  font-size: large;
+  font-weight: 500;
+  /* cursor: pointer; */
+}
+
+.forgott {
+  margin: 0 2rem;
+  color: blue;
+  font-size: small;
+  text-decoration: underline;
+  font-weight: 500;
+  cursor: pointer;
+  padding-left: 0 8rem;
+}
+.forgottBig {
+  margin: 0 2rem;
+  color: blue;
+  font-size:large;
+  text-decoration: underline;
+  font-weight: 500;
+  cursor: pointer;
+  padding-left: 140px;
+}
+
+button {
+  margin: 0.2rem;
+  margin-bottom: 1.5rem;
+  padding: 0.5rem;
+  cursor: pointer;
+  border-radius: 1rem;
+  border: none;
+  font-size: 1.1rem;
+  font-weight: bolder;
+  color: #fff;
+  background: linear-gradient(to right, #25aae1, #4481eb, #04befe, #3f86ed);
+}
+
+p {
+  text-align: center;
+  font-weight: bolder;
+}
+
+.icons {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 3rem;
+  margin-top: 0.5rem;
+}
+
+.icons a {
+  text-decoration: none;
+  font-size: 1rem;
+  margin: 0.2rem;
+}
+
+.icons .fa-google {
+  border-radius: 50%;
+  background: #ee5645;
+  color: #fff;
+  padding: 1rem;
+}
+
+.active {
+  color: black !important; 
+}
+
+
+/* Media queries for responsive design */
+@media (max-width: 501px) {
+  html {
+    font-size: 15px;
+  }
+  .container .form-1 {
+    width: 300px;
+  }
+  .container2 .form-2 {
+    width: 300px;
+  }
+  .container3 .form-3 {
+    width: 300px;
+  }
+  .container4 .form-4 {
+    width: 300px;
+  }
+}
+
+@media (min-width: 501px) and (max-width: 768px) {
+  html {
+    font-size: 14px;
+  }
+  .container .form-1 {
+    width: 200px;
+  }
+  .container2 .form-2 {
+    width: 200px;
+  }
+  .container3 .form-3 {
+    width: 200px;
+  }
+  .container4 .form-4 {
+    width: 200px;
+  }
+}
+
+</style>
+  
+  </style>
+  <script lang="javascript">
+    window.onload = function() {
+  // Open the first tab
+  openTab(null, 'tab1');
+};
+
+function openTab(evt, tabName) {
+  var i, tabContent, tabs;
+  // Hide all tab content
+  tabContent = document.getElementsByClassName("tab-content");
+  for (i = 0; i < tabContent.length; i++) {
+    tabContent[i].style.display = "none";
+  }
+
+  // Remove 'active' class from all tabs
+  tabs = document.getElementsByClassName("tab");
+  for (i = 0; i < tabs.length; i++) {
+    tabs[i].className = tabs[i].className.replace(" active", "");
+  }
+
+  // Show the selected tab content
+  document.getElementById(tabName).style.display = "block";
+
+  // Add 'active' class to the selected tab, if an event is present
+  if (evt !== null) {
+    evt.currentTarget.className += " active";
+  }
+}
+  </script>
+
+  
