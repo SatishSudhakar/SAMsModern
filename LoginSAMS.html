@@ -5,6 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Responsive Blue Header</title>
     <style>
+
+        .section-label {
+            color: cornsilk;
+        }
+
         /* Global Styles */
         body {
             margin: 0;
@@ -14,12 +19,23 @@
 
         /* Header Styles */
         .section-header {
-            background-color: #065392; /* Blue background color */
-            color: #fff; /* White text color */
+            background-color: cadetblue;
+            color: cornsilk;
             padding: 10px;
-            border-radius: 30px 30px 30px 30px;
+            border-radius: 30px 30px 0px 0px;
+            font-family: monospace;
+            font-weight: bolder;
+            font-size: x-large;
         }
-
+        .section-header1 {
+            background-color: cadetblue;
+            color: cornsilk;
+            padding: 10px;
+            border-radius: 0px 0px 0px 0px;
+            font-family: monospace;
+            font-weight: bolder;
+            font-size: x-large;
+        }
         /* Header Icon Styles */
         .header-icon {
             font-size: 24px;
@@ -29,7 +45,7 @@
 
         /* Content Container Styles */
         .content-container {
-            border: 2px solid #065392; /* Blue border */
+            border: 2px solid #5F9EA0; 
             margin: 10px;
             width: calc(50% - 24px); /* 50% width with margin and border included */
             box-sizing:border-box;
@@ -38,6 +54,7 @@
             flex-direction: column; /* Arrange children vertically */
             justify-content: space-between; /* Space between header and buttons */
             border-radius: 30px 30px 30px 30px;
+
         }
 
         /* Buttons Container Styles */
@@ -266,6 +283,12 @@ label {
     color: black;
     cursor:default;
 }
+.forgotpasswordlabel {
+    display: block; /* Display labels on separate lines */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size:small;
+    cursor:default;
+}
 
 
 
@@ -310,17 +333,17 @@ button:hover {
     </style>
 </head>
 <body>
-    <header class="section-header">
+    <header class="section-header1">
         <span><img src="Images/SAMSLOGO.JPG" alt="Description of the image" width="300" height="40"></span> <!-- Replace with your desired icon -->
     </header>
     <span class="warninglabel"> <span style="color: red;">Warning:</span> This warning banner provides privacy and security notices consistent with applicable federal laws, directives, and other federal guidance for accessing this Government system, which includes all devices/storage media attached to this system. This system is provided for Government-authorized use only. Unauthorized or improper use of this system is prohibited and may result in disciplinary action and/or civil and criminal penalties. At any time, and for any lawful Government purpose, the government may monitor, record, and audit your system usage and/or intercept, search and seize any communication or data transiting or stored on this system. Therefore, you have no reasonable expectation of privacy. Any communication or data transiting or stored on this system may be disclosed or used for any lawful Government purpose.</span>
     <div class="firstlabel"><b>Choose a login option</b></div>
+
     <!-- First Section -->
     <div class="content-container">
        
         <header class="section-header">
-            <span class="header-icon">📋</span> <!-- Replace with your desired icon -->
-            External Partners
+            <span class="header-icon section-label">📋 External Partners</span> <!-- Replace with your desired icon -->
         </header>
         <div class="forms-container">
             <form class="form-1">
@@ -331,7 +354,7 @@ button:hover {
                     <label for="password" class="lusername">SAMS Password</label>
                     <input type="password" name="password" id="password" required />
                     <button>Login</button>
-                    <p><span>Forgot Password</span></p>
+                    <p><span class="forgotpasswordlabel">Forgot Password</span></p>
                     <span class="labeloptionmessage1">For External Partners who login with only a SAMS issued UserID and Password.</span>
                 </div>
             </form>
@@ -348,11 +371,11 @@ button:hover {
         </div>
     </div>
 
+
     <!-- Second Section -->
     <div class="content-container">
         <header class="section-header">
-            <span class="header-icon">🔒</span> <!-- Replace with your desired icon -->
-            HHS Staff
+            <span class="header-icon section-label">🔒 HHS Staff</span> <!-- Replace with your desired icon -->
         </header>
         <div class="forms-container">
             <form class="form-1">
